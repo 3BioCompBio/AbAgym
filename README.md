@@ -4,7 +4,7 @@ This is the data repository of the publication [AbAgym: a well-curated dataset f
 
 Licence
 -------
-The dataset and associated files in this repository can only be used for **non-commercial purposes**. For commercial use, and in particular for the training of a commercial computational prediction model based on this dataset, please get in touch with us or our university's knowledge transfer office (ulbkto@ulb.be).
+The dataset and associated files in this repository can only be used for **non-commercial purposes**. For commercial use, and in particular for the training of a commercial computational prediction model, please get in touch with us or our university's knowledge transfer office (ulbkto@ulb.be).
 
 Dataset description
 ----------
