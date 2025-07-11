@@ -1,17 +1,3 @@
-
-
-
-There are 4 files: 
-- `AbAgym_data_full.csv`, which contains ~576k data points, including redundant mutations in homo-oligomeric PDB structures (ie structures that contain multiple copies of the same chain).
-- `AbAgym_data_non-redundant.csv`, which contains ~335k non-redundant data points, with redundant mutations in homo-oligomeric PDB structures combined into a single row, which corresponds to the biological reality of the experiment.
-- `AbAgym_metadata.csv`, which contains general information about the 67 DMS datasets.
-- `PDB_files.zip` which contains the PDB structures associated with each DMS dataset.
-
-We also include two additional files that simply correspond to the subset of interface residues in the full and non-redundant datasets, where interface residues are determined using a 6 Å distance thresold on the `closest_interface_atom_distance` column.
-
-The score of each mutation is given by the `DMS_score` column. **It is not an experimental ddG value**, but rather a score that captures the change in binding affinity upon mutation. As noted in our publication, the range of the score differs between DMS datasets, and it is therefore crucial to **normalize** the score before using it to, for example, train a machine learning predictor for antibody binding optimization. For example, you coud use the `DMS_score_range` column from the metadata table to help you normalize each DMS dataset. Also note that experiments with a DMS_score_range of [0/1] only capture destabilizing vs non-destabilizing mutations, and therefore non-destabilizing mutations are a combination of neutral and stabilizing mutations.
-
-
 # 🧬 AbAgym: A Curated Dataset for Antibody-Antigen Mutations
 
 Welcome to **AbAgym**, a manually curated repository containing 67 deep mutational scanning (DMS) datasets on antibody-antigen complexes. This resource includes over **335,000 non-redundant mutations**, along with structural data, to support the development and evaluation of computational methods for antibody design and immune escape prediction.
@@ -36,34 +22,14 @@ AbAgym is a manually curated collection of 67 antibody-antigen specific DMS data
 
 ---
 
-duplicated
 
-The score of each mutation is given by the `DMS_score` column. **It is not an experimental ddG value**, but rather a score that captures the change in binding affinity upon mutation. As noted in our publication, the range of the score differs between DMS datasets, and it is therefore crucial to **normalize** the score before using it to, for example, train a machine learning predictor for antibody binding optimization. For example, you coud use the `DMS_score_range` column from the metadata table to help you normalize each DMS dataset. Also note that experiments with a DMS_score_range of [0/1] only capture destabilizing vs non-destabilizing mutations, and therefore non-destabilizing mutations are a combination of neutral and stabilizing mutations.
+In the AbAgym data files, the score of each mutation is given by the DMS_score column. This score originates from deep mutational scanning (DMS) experiments and is not a direct experimental measurement of binding affinity changes upon mutation. Although related, DMS scores and binding affinities are not equivalent, and DMS scores depend on the specific experimental assay used. As noted in our publication, different assay types produce scores with varying ranges. Some assays output scores between 0 and 1, where 0 indicates complete neutralization (no effect on binding) and 1 indicates full immune escape. Others produce scores ranging from negative to positive values: in these cases, 0 typically indicates no effect, positive scores indicate escape mutations, and negative scores suggest enhanced binding. If you plan to use this dataset to train machine learning models, it could be necessary to normalize the scores across datasets to account for these differences. For details on the DMS assays, please refer to the Supplementary Material of our paper.
 
-
-
-## 🧪 Dataset Description
-
-- ✅ **67 antibody-antigen DMS datasets** from literature  
-- 💥 ~**335k non-redundant mutations** (plus a full set of ~576k raw entries)  
-- 🧬 Each mutation includes a `DMS_score` describing its impact on binding affinity  
-- 🧩 Each dataset is paired with a PDB structure for structural analysis  
-- 🔬 Interface residues defined using a **6 Å threshold** (`closest_interface_atom_distance`)  
-
-> **Important:**  
-> The `DMS_score` is **not an experimental ΔΔG**, but a proxy for mutation impact.  
-> Scores vary per dataset. Use `DMS_score_range` (from metadata) for normalization.  
-> Datasets with a [0,1] score range only distinguish destabilizing vs. non-destabilizing.
-
----
 
 ## ⚠️ License
 
-The dataset is released under a **non-commercial use license**.  
-📌 For **commercial applications** (e.g., training of prediction tools), please contact:
-
-- us directly, or  
-- **Université libre de Bruxelles Knowledge Transfer Office** at: 📧 `ulbkto@ulb.be`
+The dataset is freely accessible for **academic use**.  
+📌 For **commercial applications** (e.g., training of prediction tools), please contact us directly (Fabrizio.Pucci@ulb.be)
 
 ---
 
@@ -76,5 +42,5 @@ Please cite our publication when using AbAgym in your research:
   title     = {AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes},
   author    = {Cia, G. and Li, D. and Rooman, M. and Pucci, F.},
   journal   = {submitted},
-  year      = {2024}
+  year      = {2025}
 }
