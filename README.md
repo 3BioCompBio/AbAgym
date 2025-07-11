@@ -26,8 +26,7 @@ In the AbAgym data files, the score of each mutation is given by the DMS_score c
 
 ## ⚠️ License
 
-The dataset is freely accessible for **non-commercial use only**.
-📌 For **commercial applications** (e.g., training of prediction tools), please contact us (Fabrizio.Pucci@ulb.be).
+The dataset is freely accessible for **non-commercial use only**. For **commercial applications** (e.g., training of prediction tools), please contact us (Fabrizio.Pucci@ulb.be).
 
 ---
 
