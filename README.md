@@ -35,6 +35,9 @@ Welcome to **AbAgym**, a manually curated repository containing 67 deep mutation
 
 ## 📦 Contents of the Repository
 
+AbAgym is a manually curated collection of 67 antibody-antigen specific DMS datasets from the scientific literature. It contains ~335k non-redundant data points about the effect of single amino acid substitutions on antibody-antigen binding, including 37,361 interface mutations. Also, each DMS dataset comes with an associated 3D structure in PDB format. Details about the data collection and curation process can be found in our publication.
+
+
 | File | Description |
 |------|-------------|
 | `AbAgym_data_full.csv` | ~576k raw mutation data, includes redundancy from homo-oligomers |
@@ -45,6 +48,10 @@ Welcome to **AbAgym**, a manually curated repository containing 67 deep mutation
 | `AbAgym_interface_non-redundant.csv` | Interface subset from non-redundant data |
 
 ---
+
+The score of each mutation is given by the `DMS_score` column. **It is not an experimental ddG value**, but rather a score that captures the change in binding affinity upon mutation. As noted in our publication, the range of the score differs between DMS datasets, and it is therefore crucial to **normalize** the score before using it to, for example, train a machine learning predictor for antibody binding optimization. For example, you coud use the `DMS_score_range` column from the metadata table to help you normalize each DMS dataset. Also note that experiments with a DMS_score_range of [0/1] only capture destabilizing vs non-destabilizing mutations, and therefore non-destabilizing mutations are a combination of neutral and stabilizing mutations.
+
+
 
 ## 🧪 Dataset Description
 
