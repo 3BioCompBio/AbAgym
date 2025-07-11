@@ -1,16 +1,5 @@
-# AbAgym
 
-This is the data repository of AbAgym, a manually curated collection of 67 antibody-antigen specific DMS datasets from the scientific literature. It contains ~335k non-redundant data points about the effect of single amino acid substitutions on antibody-antigen binding, including 37,361 interface mutations. Also, each DMS dataset comes with an associated 3D structure in PDB format. 
 
-Details about the data collection and curation process can be found in our publication: G.Cia, D. Li, M. Rooman, F. Pucci, ["AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes"](https://www.google.com/) (submitted)
-
-Licence
--------
-The dataset and associated files in this repository can only be used for **non-commercial purposes**. For commercial use, and in particular for the training of a commercial computational prediction model, please get in touch with us or our university's knowledge transfer office (ulbkto@ulb.be).
-
-Dataset description
-----------
-AbAgym is a manually curated collection of 67 antibody-antigen specific DMS datasets from the scientific literature. It contains ~335k non-redundant data points about the effect of single amino acid substitutions on antibody-antigen binding, including 37,361 interface mutations. Also, each DMS dataset comes with an associated 3D structure in PDB format. Details about the data collection and curation process can be found in our publication.
 
 There are 4 files: 
 - `AbAgym_data_full.csv`, which contains ~576k data points, including redundant mutations in homo-oligomeric PDB structures (ie structures that contain multiple copies of the same chain).
@@ -28,8 +17,7 @@ The score of each mutation is given by the `DMS_score` column. **It is not an ex
 Welcome to **AbAgym**, a manually curated repository containing 67 deep mutational scanning (DMS) datasets on antibody-antigen complexes. This resource includes over **335,000 non-redundant mutations**, along with structural data, to support the development and evaluation of computational methods for antibody design and immune escape prediction.
 
 📄 _For full details, please refer to our publication:_  
-**G. Cia, D. Li, M. Rooman, F. Pucci**  
-📝 [“AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes”](https://www.google.com/) _(submitted)_
+**G. Cia, D. Li, M. Rooman, F. Pucci** [“AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes”](https://www.google.com/) _(submitted)_
 
 ---
 
@@ -40,9 +28,9 @@ AbAgym is a manually curated collection of 67 antibody-antigen specific DMS data
 
 | File | Description |
 |------|-------------|
-| `AbAgym_data_full.csv` | ~576k raw mutation data, includes redundancy from homo-oligomers |
-| `AbAgym_data_non-redundant.csv` | ~335k deduplicated mutations (realistic experimental context) |
-| `AbAgym_metadata.csv` | Metadata and normalization info for each DMS dataset |
+| `AbAgym_data_full.csv` | ~576k redundant mutation data (mutations are annotated on all identical chains of homo-oligomeric PDB structures).|
+| `AbAgym_data_non-redundant.csv` | ~335k raw non-redundant mutations  |
+| `AbAgym_metadata.csv` | General information of each DMS dataset (organism |
 | `PDB_files.zip` | 3D structures of antibody-antigen complexes |
 | `AbAgym_interface_full.csv` | Subset of interface residues from full dataset |
 | `AbAgym_interface_non-redundant.csv` | Interface subset from non-redundant data |
