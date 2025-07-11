@@ -9,8 +9,7 @@ Welcome to **AbAgym**, a manually curated dataset containing 67 deep mutational 
 
 ## 📦 Contents of the Repository
 
-AbAgym is a manually curated collection of 67 antibody-antigen specific DMS datasets from the scientific literature. It contains ~335k non-redundant data points about the effect of single amino acid substitutions on antibody-antigen binding, including 37,361 interface mutations. Also, each DMS dataset comes with an associated 3D structure in PDB format. Details about the data collection and curation process can be found in our publication.
-
+The table below describes the files contained in this repository.
 
 | File | Description |
 |------|-------------|
