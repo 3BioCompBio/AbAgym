@@ -13,11 +13,11 @@ The table below describes the data and files contained in this repository.
 
 | File | Description |
 |------|-------------|
-| `AbAgym_data_full.csv` | ~576k redundant mutation data (i.e all individual mutations, including those on identical chains of homo-oligomeric PDB structures).|
+| `AbAgym_data_full.csv` | ~576k redundant mutation data (i.e all individual mutations, including those on identical chains of homo-oligomeric PDB structures)|
 | `AbAgym_data_non-redundant.csv` | ~335k non-redundant mutation data (i.e mutations on identical chains of homo-oligomeric chains combined into a single row) |
 | `AbAgym_metadata.csv` | General information of each DMS dataset |
 | `PDB_files.zip` | 3D structures of antibody-antigen complexes |
-| `AbAgym_data_full_interface.csv` | Subset of mutations located at the Antibody-Antigen interface, used for benchmarking computational prediction methods (interface residues are determined using a 6 Å heavy atom distance thresold).|
+| `AbAgym_data_full_interface.csv` | Subset of mutations located at the Antibody-Antigen interface, used for benchmarking computational prediction methods (interface residues are determined using a 6 Å heavy atom distance thresold)|
 
 ---
 
