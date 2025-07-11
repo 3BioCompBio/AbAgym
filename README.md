@@ -1,6 +1,6 @@
 # 🧬 AbAgym: A Curated Dataset for Antibody-Antigen Mutations
 
-Welcome to **AbAgym**, a manually curated repository containing 67 deep mutational scanning (DMS) datasets on antibody-antigen complexes. This resource includes over **335,000 non-redundant mutations**, along with structural data, to support the development and evaluation of computational methods for antibody design and immune escape prediction.
+Welcome to **AbAgym**, a manually curated dataset containing 67 deep mutational scanning (DMS) datasets on antibody-antigen complexes. This resource includes over **335,000 non-redundant mutations**, along with structural data, to support the development and evaluation of computational methods for antibody design and immune escape prediction.
 
 📄 _For full details, please refer to our publication:_  
 **G. Cia, D. Li, M. Rooman, F. Pucci** [“AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes”](https://www.google.com/) _(submitted)_
