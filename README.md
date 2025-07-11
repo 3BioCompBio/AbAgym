@@ -21,7 +21,6 @@ The table below describes the files contained in this repository.
 
 ---
 
-
 In the AbAgym data files, the score of each mutation is given by the DMS_score column. This score originates from deep mutational scanning (DMS) experiments and is not a direct experimental measurement of binding affinity changes upon mutation. Although related, DMS scores and binding affinities are not equivalent, and DMS scores depend on the specific experimental assay used. As noted in our publication, different assay types produce scores with varying ranges. Some assays output scores between 0 and 1, where 0 indicates complete neutralization (no effect on binding) and 1 indicates full immune escape. Others produce scores ranging from negative to positive values: in these cases, 0 typically indicates no effect, positive scores indicate escape mutations, and negative scores suggest enhanced binding. If you plan to use this dataset to train machine learning models, it could be necessary to normalize the scores across datasets to account for these differences. For details on the DMS assays, please refer to the Supplementary Material of our paper.
 
 
