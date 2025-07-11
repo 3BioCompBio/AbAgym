@@ -18,6 +18,6 @@ There are 4 files:
 - `AbAgym_metadata.csv`, which contains general information about the 67 DMS datasets.
 - `PDB_files.zip` which contains the PDB structures associated with each DMS dataset.
 
-To obtain interface mutations as we did in our publication, simply subset the data to residues within 6 Å using the `closest_interface_atom_distance` column.
+We also include two additional files that simply correspond to the subset of interface residues in the full and non-redundant datasets, where interface residues are determined using a 6 Å distance thresold on the `closest_interface_atom_distance` column.
 
 The score of each mutation is given by the `DMS_score` column. **It is not an experimental ddG value**, but rather a score that captures the change in binding affinity upon mutation. As noted in our publication, the range of the score differs between DMS datasets, and it is therefore crucial to **normalize** the score before using it to, for example, train a machine learning predictor for antibody binding optimization. For example, you coud use the `DMS_score_range` column from the metadata table to help you normalize each DMS dataset. Also note that experiments with a DMS_score_range of [0/1] only capture destabilizing vs non-destabilizing mutations, and therefore non-destabilizing mutations are a combination of neutral and stabilizing mutations.
