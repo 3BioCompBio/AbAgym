@@ -1,9 +1,9 @@
 # 🧬 AbAgym: A Curated Dataset for Antibody-Antigen Mutations
 
-Welcome to **AbAgym**, a manually curated dataset containing 67 deep mutational scanning (DMS) datasets on antibody-antigen complexes, along with 3D structures of each complex. The dataset includes over **335,000 non-redundant mutations**, including 37,361 interface mutations, which can support the development and evaluation of computational methods for antibody design and immune escape prediction.
+Welcome to **AbAgym**, a manually curated dataset containing 67 deep mutational scanning (DMS) datasets on antibody-antigen complexes, along with the 3D structure of each complex. The dataset includes over **335,000 non-redundant mutations**, including 37,361 interface mutations, which can support the development and evaluation of computational methods for antibody design and immune escape prediction.
 
 📄 _For full details, please refer to our publication:_  
-**G. Cia, D. Li, M. Rooman, F. Pucci** [“AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes”](https://www.google.com/) _(submitted)_
+**G. Cia, D. Li, S. Poblete, M. Rooman, F. Pucci** [“AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes”](https://www.google.com/) _(submitted)_
 
 ---
 
@@ -13,11 +13,11 @@ The table below describes the data and files contained in this repository.
 
 | File | Description |
 |------|-------------|
-| `AbAgym_data_full.csv` | ~576k redundant mutation data (i.e all individual mutations, including those on identical chains of homo-oligomeric PDB structures)|
-| `AbAgym_data_non-redundant.csv` | ~335k non-redundant mutation data (i.e mutations on identical chains of homo-oligomeric chains combined into a single row) |
+| `AbAgym_data_full.csv` | ~576k redundant mutation data (i.e. all individual mutations, including those in identical chains of homo-oligomeric PDB structures)|
+| `AbAgym_data_non-redundant.csv` | ~335k non-redundant mutation data (i.e. mutations in identical chains of homo-oligomeric chains combined into a single row) |
 | `AbAgym_metadata.csv` | General information of each DMS dataset |
 | `PDB_files.zip` | 3D structures of antibody-antigen complexes |
-| `AbAgym_data_full_interface.csv` | Subset of mutations located at the Antibody-Antigen interface, which we used to benchmark computational prediction methods. Interface residues are determined using a 6 Å heavy atom distance thresold|
+| `AbAgym_data_full_interface.csv` | Subset of mutations located at the antibody-antigen interface, which we used to benchmark computational prediction methods. Interface residues are determined using a 6 Å heavy atom distance threshold|
 
 ---
 
@@ -37,7 +37,7 @@ Please cite our publication when using AbAgym in your research:
 ```bibtex
 @article{cia2024abagym,
   title     = {AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes},
-  author    = {Cia, G. and Li, D. and Rooman, M. and Pucci, F.},
+  author    = {Cia, G. and Li, D. and Poblete, S. and Rooman, M. and Pucci, F.},
   journal   = {submitted},
   year      = {2025}
 }
