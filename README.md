@@ -1,6 +1,6 @@
 # 🧬 AbAgym: A Curated Dataset for Antibody-Antigen Mutations
 
-Welcome to **AbAgym**, a manually curated dataset containing 68 deep mutational scanning (DMS) datasets on antibody-antigen complexes, along with the 3D structure of each complex. The dataset includes around **324,000 non-redundant mutations**, including 37,361 interface mutations, which can support the development and evaluation of computational methods for antibody design and immune escape prediction.
+Welcome to **AbAgym**, a manually curated dataset containing 68 deep mutational scanning (DMS) datasets on antibody-antigen complexes, along with the 3D structure of each complex. The dataset includes around **324,000 non-redundant mutations**, including 36,541 interface mutations, which can support the development and evaluation of computational methods for antibody design and immune escape prediction.
 
 📄 _For full details, please refer to our publication:_  
 **G. Cia, D. Li, S. Poblete, M. Rooman, F. Pucci** ["AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes"](https://www.biorxiv.org/content/10.1101/2025.07.15.664862v1)
@@ -13,9 +13,9 @@ The table below describes the data and files contained in this repository. Addit
 
 | File | Description |
 |------|-------------|
-| `AbAgym_data_full.csv` | ~572k redundant mutation data (i.e. all individual mutations, including those in identical chains of homo-oligomeric PDB structures)|
+| `AbAgym_data_full.csv.zip` | ~572k redundant mutation data (i.e. all individual mutations, including those in identical chains of homo-oligomeric PDB structures)|
 | `AbAgym_data_full_interface.csv` | Subset of 37,361 redundant mutations located at the antibody-antigen interface, which we used to benchmark computational prediction methods. Interface residues are determined using a 6 Å heavy atom distance threshold|
-| `AbAgym_data_non-redundant.csv` | ~324k non-redundant mutation data (i.e. mutations in identical chains of homo-oligomeric chains combined into a single row) |
+| `AbAgym_data_non-redundant.csv.zip` | ~324k non-redundant mutation data (i.e. mutations in identical chains of homo-oligomeric chains combined into a single row) |
 | `AbAgym_data_non-redundant_interface.csv` | Subset of 36,541 non-redundant mutations located at the antibody-antigen interface. Interface residues are determined using a 6 Å heavy atom distance threshold|
 | `AbAgym_metadata.csv` | General information of each DMS dataset |
 | `PDB_files.zip` | 3D structures of the antibody-antigen complexes |
