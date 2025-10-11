@@ -3,13 +3,13 @@
 Welcome to **AbAgym**, a manually curated dataset containing 68 deep mutational scanning (DMS) datasets on antibody-antigen complexes, along with the 3D structure of each complex. The dataset includes around **324,000 non-redundant mutations**, including 37,361 interface mutations, which can support the development and evaluation of computational methods for antibody design and immune escape prediction.
 
 📄 _For full details, please refer to our publication:_  
-**G. Cia, D. Li, S. Poblete, M. Rooman, F. Pucci** [“AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes”](https://www.google.com/) _(submitted)_
+**G. Cia, D. Li, S. Poblete, M. Rooman, F. Pucci** ["AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes"](https://www.biorxiv.org/content/10.1101/2025.07.15.664862v1)
 
 ---
 
 ## 📦 Contents of the Repository
 
-The table below describes the data and files contained in this repository.
+The table below describes the data and files contained in this repository. Additionaly, FoldX structures generated to perform the benchmark presented in the publication can be [downloaded here](https://drive.google.com/file/d/1OmKgf6nxWAcG0av5GKH6xokn4Bz19CAL/view?usp=sharing) (FoldX licensing terms apply).
 
 | File | Description |
 |------|-------------|
@@ -19,6 +19,7 @@ The table below describes the data and files contained in this repository.
 | `AbAgym_data_non-redundant_interface.csv` | Subset of 36,541 non-redundant mutations located at the antibody-antigen interface. Interface residues are determined using a 6 Å heavy atom distance threshold|
 | `AbAgym_metadata.csv` | General information of each DMS dataset |
 | `PDB_files.zip` | 3D structures of the antibody-antigen complexes |
+
 
 ---
 
