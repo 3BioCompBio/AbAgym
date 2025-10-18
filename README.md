@@ -9,7 +9,7 @@ Welcome to **AbAgym**, a manually curated dataset containing 68 deep mutational 
 
 ## 📦 Contents of the Repository
 
-The table below describes the data and files contained in this repository. Additionaly, FoldX structures generated to perform the benchmark presented in the publication can be at https://zenodo.org/records/17328791 (FoldX licensing terms apply).
+The table below describes the data and files contained in this repository. Additionaly, FoldX structures generated to perform the benchmark presented in the publication can be downloaded at https://zenodo.org/records/17328791 (FoldX licensing terms apply).
 
 | File | Description |
 |------|-------------|
