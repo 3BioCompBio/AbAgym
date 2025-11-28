@@ -3,7 +3,7 @@
 Welcome to **AbAgym**, a manually curated dataset containing 68 deep mutational scanning (DMS) datasets on antibody-antigen complexes, along with the 3D structure of each complex. The dataset includes around **324,000 non-redundant mutations**, including 36,541 interface mutations, which can support the development and evaluation of computational methods for antibody design and immune escape prediction.
 
 📄 _For full details, please refer to our publication:_  
-**G. Cia, D. Li, S. Poblete, M. Rooman, F. Pucci** ["AbAgym: a well-curated dataset for the mutational analysis of antibody-antigen complexes"](https://www.biorxiv.org/content/10.1101/2025.07.15.664862v1)
+**G. Cia, D. Li, S. Poblete, M. Rooman, F. Pucci** ["AbAgym: a well-curated dataset for the mutational analysis of antibody–antigen complexes. mAbs, 17(1)"](https://doi.org/10.1080/19420862.2025.2592421)
 
 ---
 
